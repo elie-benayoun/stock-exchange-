@@ -19,7 +19,7 @@ class Marquee {
   load() {
     this.loadingText.classList.remove("disapear");
     // receive the list of companies from the web
-    fetch("https://financialmodelingprep.com/api/v3/company/stock/list")
+    fetch("https://financialmodelingprep.com/api/v3/company/stock/list?apikey=9e70ad8f1cbec848c988d1ae31230d7f")
       .then(response => {
         return response.json();
       })

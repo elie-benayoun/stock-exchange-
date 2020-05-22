@@ -41,7 +41,7 @@ class SearchResults {
         if (i + 2 < data.length) {
           urlToPush += `,${data[i + 2].symbol}`;
         }
-        urls.push(urlToPush);
+        urls.push(urlToPush+"?apikey=9e70ad8f1cbec848c988d1ae31230d7f");
       }
 
       Promise.all(urls.map((u) => fetch(u)))

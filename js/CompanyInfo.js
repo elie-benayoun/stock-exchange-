@@ -56,7 +56,7 @@ class CompanyInfo {
 
     this.loadingContainer.classList.remove("disapear");
     //fetching all the needed data
-    fetch(`https://financialmodelingprep.com/api/v3/company/profile/${symbol}`)
+    fetch(`https://financialmodelingprep.com/api/v3/company/profile/${symbol}?apikey=9e70ad8f1cbec848c988d1ae31230d7f`)
       .then(response => {
         return response.json();
       })
@@ -89,7 +89,7 @@ class CompanyInfo {
     let down = [];
     let up = [];
     //fetching the needed data for the chart
-    fetch(`https://financialmodelingprep.com/api/v3/historical-price-full/${symbol}?serietype=line`)
+    fetch(`https://financialmodelingprep.com/api/v3/historical-price-full/${symbol}?serietype=line&apikey=9e70ad8f1cbec848c988d1ae31230d7f`)
       .then(res => {
         return res.json();
       })

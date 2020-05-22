@@ -50,7 +50,7 @@ class SearchForm{
           }
           function doFetch(){
             // receive the list of companies from the web
-            fetch("https://financialmodelingprep.com/api/v3/search?query=" +myInput.value + "&limit=10&exchange=NASDAQ")
+            fetch("https://financialmodelingprep.com/api/v3/search?query=" +myInput.value + "&limit=10&exchange=NASDAQ&apikey=9e70ad8f1cbec848c988d1ae31230d7f")
             .then(response=>{
               return response.json()
             })
@@ -58,6 +58,7 @@ class SearchForm{
               // calling the callback function with the needed data
               callback(data)
             })
+            
           }
           
         
